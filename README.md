@@ -1,3 +1,6 @@
 # GCSVR
 Graph Convolutional Support Vector Regression 
 This repository provides the data and code for the paper titled "Graph Convolutional Support Vector Regression for Robust Spatiotemporal Forecasting of Urban Air Pollution" authored by Nourin Jahana, Madhurima Panja, Muhammed Navas, and Tanujit Chakraborty.
+
+# Data Description
+The analysis uses daily air quality measurements from Delhi and Mumbai. For Delhi, data from January 1, 2019 to December 31, 2022 are used for model training, and forecasts are generated for selected periods in 2023. For Mumbai, data from January 1, 2021 to December 31, 2023 are used for training, and forecasts are generated for corresponding periods in 2024. To assess performance across different prediction settings, we consider three forecasting horizons: short-term, medium-term, and long-term, corresponding to 30, 60, and 90 days, respectively, using a rolling-window evaluation strategy. For the short-term setting, forecasts are produced separately for each month of the test year. For the medium-term setting, forecasts are generated over six non-overlapping two-month windows. For the long-term setting, the test year is divided into four non-overlapping three-month windows, corresponding to quarterly forecasting periods. Two datasets with locations for both $PM_{2.5}$ and $PM_{10}$ are available in the [Data] folder. 
